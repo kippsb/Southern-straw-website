@@ -1,65 +1,157 @@
-import Image from "next/image";
+import { Truck, HardHat, PackageCheck } from "lucide-react";
+import Hero from "@/components/sections/Hero";
+import TrustBar from "@/components/sections/TrustBar";
+import ServiceCard from "@/components/sections/ServiceCard";
+import ServiceAreaTeaser from "@/components/sections/ServiceAreaTeaser";
+import GalleryGrid from "@/components/sections/GalleryGrid";
+import CTASection from "@/components/sections/CTASection";
+import Container from "@/components/ui/Container";
+import { LinkButton } from "@/components/ui/Button";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <>
+      <Hero
+        eyebrow="Bluffton · Hilton Head · Savannah"
+        title="Your Yard Should Look Like You Care. Not Like You've Given Up."
+        subtitle="Southern Straw delivers and installs premium pine straw and wheat straw across the Low Country — so you can stop staring at bare beds and start enjoying your yard again."
+        primaryCta={{ label: "Get a Free Quote", href: "/contact" }}
+        secondaryCta={{ label: "See Our Work", href: "/gallery" }}
+      />
+
+      <TrustBar />
+
+      <section className="py-20">
+        <Container>
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl font-semibold text-lawn-900 md:text-4xl">
+              Bare Beds Are the One Thing That Makes a Nice Home Look
+              Neglected
+            </h2>
+            <p className="mt-4 text-lg text-charcoal-700">
+              You&apos;ve put real time and money into your home. But every
+              time you pull into the driveway, those patchy, faded beds
+              remind you there&apos;s still something left undone. You know
+              what it needs — you just don&apos;t have the weekend to deal
+              with it. That&apos;s exactly why Southern Straw exists.
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-20">
+        <Container>
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl font-semibold text-lawn-900 md:text-4xl">
+              Pick the Level of Help That Fits Your Life
+            </h2>
+            <p className="mt-4 text-lg text-charcoal-700">
+              Whether you want to spread it yourself or never lift a finger,
+              we&apos;ve got you covered.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            <ServiceCard
+              icon={Truck}
+              title="Delivery"
+              description="You spread it, we drop it. We deliver bulk pine or wheat straw exactly where you need it. Perfect if you like doing the work yourself but hate making a dozen trips to the garden center."
+              href="/services"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            <ServiceCard
+              icon={HardHat}
+              title="Installation"
+              description="We handle everything. Our crew spreads, edges, and cleans up. You come home to a finished yard. No sweat — literally."
+              href="/services"
+            />
+            <ServiceCard
+              icon={PackageCheck}
+              title="Full Service"
+              description="Delivery and installation, start to finish. Our most popular option for busy households who want it done right without carving out a Saturday."
+              href="/services"
+            />
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-20">
+        <Container>
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl font-semibold text-lawn-900 md:text-4xl">
+              Getting a Better Yard Is Simpler Than You Think
+            </h2>
+          </div>
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            {[
+              {
+                number: "1",
+                title: "Tell us about your yard",
+                description:
+                  "Fill out our quick form — takes two minutes. Let us know your address, square footage, and what you're looking for.",
+              },
+              {
+                number: "2",
+                title: "Get a free quote",
+                description:
+                  "We'll reach out with a straightforward price. No surprise add-ons. No pressure.",
+              },
+              {
+                number: "3",
+                title: "Come home to a finished yard",
+                description:
+                  "We show up when we say we will, do the work, and leave your yard looking exactly the way it should.",
+              },
+            ].map((step) => (
+              <div key={step.number} className="flex gap-4">
+                <div className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-lawn-900 font-display font-semibold text-sand-50">
+                  {step.number}
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lawn-900">
+                    {step.title}
+                  </h3>
+                  <p className="mt-1 text-sm leading-relaxed text-charcoal-700">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <ServiceAreaTeaser />
+
+      <section className="py-20">
+        <Container>
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div className="max-w-xl">
+              <h2 className="font-display text-3xl font-semibold text-lawn-900 md:text-4xl">
+                The Craft, In Progress
+              </h2>
+              <p className="mt-4 text-lg text-charcoal-700">
+                We&apos;re building our photo gallery as we complete new projects.
+              </p>
+            </div>
+            <LinkButton href="/gallery" variant="outline">
+              View Gallery
+            </LinkButton>
+          </div>
+          <div className="mt-10">
+            <GalleryGrid items={[
+              { label: "Fresh Pine Straw Install", tone: "wheat" },
+              { label: "Bed Edging & Cleanup", tone: "lawn" },
+              { label: "Wheat Straw Delivery", tone: "clay" },
+            ]} />
+          </div>
+        </Container>
+      </section>
+
+      <CTASection
+        heading="Your Yard Is One Step Away From Looking Like It Should"
+        subheading="Get a free, no-pressure quote in minutes."
+        ctaLabel="Get a Free Quote"
+        ctaHref="/contact"
+      />
+    </>
   );
 }
