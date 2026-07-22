@@ -13,7 +13,7 @@ export const OG_IMAGE = {
 export const BUSINESS_PHONE_DISPLAY = "(843) 535-7227";
 export const BUSINESS_PHONE_HREF = "+18435357227";
 export const BUSINESS_SMS_HREF = "sms:+18435357227";
-export const BUSINESS_EMAIL = "agro3559@gmail.com";
+export const BUSINESS_EMAIL = "strawsouthern@gmail.com";
 
 export const RESPONSE_TIME_NOTE = "We typically reply within one business day.";
 

@@ -1,7 +1,7 @@
 import type { QuoteRequest } from "@/lib/validation";
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
-const QUOTE_TO_EMAIL = process.env.QUOTE_TO_EMAIL ?? "agro3559@gmail.com";
+const QUOTE_TO_EMAIL = process.env.QUOTE_TO_EMAIL ?? "strawsouthern@gmail.com";
 const QUOTE_FROM_EMAIL = process.env.QUOTE_FROM_EMAIL ?? "quotes@strawsouthern.com";
 
 export async function sendQuoteEmail(data: QuoteRequest): Promise<void> {
