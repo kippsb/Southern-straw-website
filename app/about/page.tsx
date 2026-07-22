@@ -4,7 +4,7 @@ import Hero from "@/components/sections/Hero";
 import ValueProps from "@/components/sections/ValueProps";
 import CTASection from "@/components/sections/CTASection";
 import Container from "@/components/ui/Container";
-import { Wheat } from "lucide-react";
+import Logo from "@/components/ui/Logo";
 
 export const metadata: Metadata = {
   title: "About | Southern Straw",
@@ -23,14 +23,14 @@ export default function AboutPage() {
 
       <section className="py-20">
         <Container className="grid gap-10 md:grid-cols-[1fr_1.2fr] md:items-center">
-          <div className="flex aspect-square items-center justify-center rounded-3xl border-2 border-dashed border-lawn-900/15 bg-gradient-to-br from-wheat-100 via-sand-100 to-lawn-100">
-            <Wheat className="h-16 w-16 text-wheat-600" aria-hidden />
+          <div className="flex aspect-square items-center justify-center rounded border-2 border-dashed border-canopy-900/15 bg-gradient-to-br from-straw-100 via-loam-100 to-canopy-100">
+            <Logo className="h-24 w-24 text-canopy-900" />
           </div>
           <div>
-            <h2 className="font-display text-3xl font-semibold text-lawn-900">
+            <h2 className="font-display text-3xl font-semibold text-canopy-900">
               Our Story
             </h2>
-            <p className="mt-4 text-charcoal-700">
+            <p className="mt-4 text-canopy-700">
               Southern Straw started the way a lot of good Low Country
               businesses do — with a truck, a reputation for showing up, and
               neighbors asking for help getting their yards ready for the
@@ -39,7 +39,7 @@ export default function AboutPage() {
               Head, and Savannah, and we&apos;re proud to now offer that same
               craftsmanship directly to homeowners.
             </p>
-            <p className="mt-4 text-charcoal-700">
+            <p className="mt-4 text-canopy-700">
               We still run it like a local crew should: small enough to care
               about every yard we touch, experienced enough to get it right
               the first time.

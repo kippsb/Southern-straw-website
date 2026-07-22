@@ -1,5 +1,5 @@
 export const inputClasses =
-  "mt-1.5 w-full rounded-lg border border-lawn-900/15 bg-sand-50 px-4 py-2.5 text-sm text-charcoal-900 placeholder:text-charcoal-700/40 focus:border-lawn-700 focus:outline-none focus:ring-2 focus:ring-lawn-700/20";
+  "mt-1.5 w-full rounded border border-moss-500 bg-fog-50 px-4 py-2.5 text-sm text-canopy-900 placeholder:text-canopy-700/40 focus:border-straw-500 focus:outline-none focus:ring-2 focus:ring-straw-500";
 
 export function FieldWrapper({
   label,
@@ -16,12 +16,12 @@ export function FieldWrapper({
 }) {
   return (
     <div>
-      <label htmlFor={htmlFor} className="block text-sm font-medium text-charcoal-800">
+      <label htmlFor={htmlFor} className="block text-sm font-medium text-canopy-800">
         {label}
       </label>
       {children}
-      {hint ? <p className="mt-1.5 text-xs text-charcoal-700/70">{hint}</p> : null}
-      {error ? <p className="mt-1.5 text-xs font-medium text-clay-600">{error}</p> : null}
+      {hint ? <p className="mt-1.5 text-xs text-moss-600">{hint}</p> : null}
+      {error ? <p className="mt-1.5 text-xs font-medium text-bark-600">{error}</p> : null}
     </div>
   );
 }

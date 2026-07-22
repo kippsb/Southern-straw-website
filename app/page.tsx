@@ -24,11 +24,11 @@ export default function Home() {
       <section className="py-20">
         <Container>
           <div className="max-w-2xl">
-            <h2 className="font-display text-3xl font-semibold text-lawn-900 md:text-4xl">
+            <h2 className="font-display text-3xl font-semibold text-canopy-900 md:text-4xl">
               Bare Beds Are the One Thing That Makes a Nice Home Look
               Neglected
             </h2>
-            <p className="mt-4 text-lg text-charcoal-700">
+            <p className="mt-4 text-lg text-canopy-700">
               You&apos;ve put real time and money into your home. But every
               time you pull into the driveway, those patchy, faded beds
               remind you there&apos;s still something left undone. You know
@@ -42,10 +42,10 @@ export default function Home() {
       <section className="py-20">
         <Container>
           <div className="max-w-2xl">
-            <h2 className="font-display text-3xl font-semibold text-lawn-900 md:text-4xl">
+            <h2 className="font-display text-3xl font-semibold text-canopy-900 md:text-4xl">
               Pick the Level of Help That Fits Your Life
             </h2>
-            <p className="mt-4 text-lg text-charcoal-700">
+            <p className="mt-4 text-lg text-canopy-700">
               Whether you want to spread it yourself or never lift a finger,
               we&apos;ve got you covered.
             </p>
@@ -76,7 +76,7 @@ export default function Home() {
       <section className="py-20">
         <Container>
           <div className="max-w-2xl">
-            <h2 className="font-display text-3xl font-semibold text-lawn-900 md:text-4xl">
+            <h2 className="font-display text-3xl font-semibold text-canopy-900 md:text-4xl">
               Getting a Better Yard Is Simpler Than You Think
             </h2>
           </div>
@@ -102,14 +102,14 @@ export default function Home() {
               },
             ].map((step) => (
               <div key={step.number} className="flex gap-4">
-                <div className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-lawn-900 font-display font-semibold text-sand-50">
+                <div className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-canopy-900 font-display font-semibold text-fog-50">
                   {step.number}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lawn-900">
+                  <h3 className="font-semibold text-canopy-900">
                     {step.title}
                   </h3>
-                  <p className="mt-1 text-sm leading-relaxed text-charcoal-700">
+                  <p className="mt-1 text-sm leading-relaxed text-canopy-700">
                     {step.description}
                   </p>
                 </div>
@@ -125,10 +125,10 @@ export default function Home() {
         <Container>
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div className="max-w-xl">
-              <h2 className="font-display text-3xl font-semibold text-lawn-900 md:text-4xl">
+              <h2 className="font-display text-3xl font-semibold text-canopy-900 md:text-4xl">
                 The Craft, In Progress
               </h2>
-              <p className="mt-4 text-lg text-charcoal-700">
+              <p className="mt-4 text-lg text-canopy-700">
                 We&apos;re building our photo gallery as we complete new projects.
               </p>
             </div>
@@ -138,9 +138,9 @@ export default function Home() {
           </div>
           <div className="mt-10">
             <GalleryGrid items={[
-              { label: "Fresh Pine Straw Install", tone: "wheat" },
-              { label: "Bed Edging & Cleanup", tone: "lawn" },
-              { label: "Wheat Straw Delivery", tone: "clay" },
+              { label: "Fresh Pine Straw Install", tone: "straw" },
+              { label: "Bed Edging & Cleanup", tone: "canopy" },
+              { label: "Wheat Straw Delivery", tone: "bark" },
             ]} />
           </div>
         </Container>

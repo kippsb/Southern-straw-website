@@ -10,7 +10,7 @@ const ITEMS = [
 
 export default function TrustBar() {
   return (
-    <div className="border-y border-lawn-900/10 bg-sand-50/60 py-6">
+    <div className="border-y border-canopy-900/10 bg-fog-50/60 py-6">
       <Container className="flex flex-wrap items-center justify-center gap-3">
         {ITEMS.map((item) => (
           <Badge key={item.label} icon={item.icon}>

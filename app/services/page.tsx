@@ -44,13 +44,13 @@ export default function ServicesPage() {
         </Container>
       </section>
 
-      <section className="bg-sand-50 py-20">
+      <section className="bg-fog-50 py-20">
         <Container className="grid gap-10 md:grid-cols-2">
           <div>
-            <h2 className="font-display text-3xl font-semibold text-lawn-900">
+            <h2 className="font-display text-3xl font-semibold text-canopy-900">
               Pine Straw or Wheat Straw?
             </h2>
-            <p className="mt-4 text-charcoal-700">
+            <p className="mt-4 text-canopy-700">
               Both are popular ground covers in the Low Country, and we&apos;re
               happy to help you choose based on your beds, budget, and look
               you&apos;re going for.
@@ -58,16 +58,16 @@ export default function ServicesPage() {
           </div>
           <div className="space-y-6">
             <div>
-              <h3 className="font-semibold text-lawn-900">Pine Straw</h3>
-              <p className="mt-2 text-sm leading-relaxed text-charcoal-700">
+              <h3 className="font-semibold text-canopy-900">Pine Straw</h3>
+              <p className="mt-2 text-sm leading-relaxed text-canopy-700">
                 Long-lasting and slow to fade, pine straw locks together to
                 stay put on slopes and holds its rich color well into the
                 season. A classic choice across Southern yards.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-lawn-900">Wheat Straw</h3>
-              <p className="mt-2 text-sm leading-relaxed text-charcoal-700">
+              <h3 className="font-semibold text-canopy-900">Wheat Straw</h3>
+              <p className="mt-2 text-sm leading-relaxed text-canopy-700">
                 A lighter, golden look that breaks down into the soil faster —
                 a good fit for fresh beds, new plantings, or a seasonal
                 refresh.
@@ -78,16 +78,16 @@ export default function ServicesPage() {
       </section>
 
       <section className="py-20">
-        <Container className="flex flex-col items-start gap-6 rounded-3xl bg-lawn-900 p-10 text-sand-100 md:flex-row md:items-center md:justify-between">
+        <Container className="flex flex-col items-start gap-6 rounded bg-canopy-900 p-10 text-fog-50 md:flex-row md:items-center md:justify-between">
           <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 flex-none items-center justify-center rounded-full bg-sand-50/10 text-wheat-400">
+            <div className="flex h-12 w-12 flex-none items-center justify-center rounded-full bg-fog-50/10 text-straw-400">
               <Building2 className="h-6 w-6" aria-hidden />
             </div>
             <div>
-              <h2 className="font-display text-2xl font-semibold text-sand-50">
+              <h2 className="font-display text-2xl font-semibold text-fog-50">
                 Commercial &amp; Property Management
               </h2>
-              <p className="mt-2 max-w-xl text-sand-200/90">
+              <p className="mt-2 max-w-xl text-fog-200/90">
                 We also partner with business parks, HOAs, and property
                 managers across the Low Country who need reliable, large-scale
                 straw service on a schedule they can count on. Subcontractor

@@ -8,9 +8,9 @@ export default function HeroPattern({ className = "" }: { className?: string }) 
     >
       <defs>
         <linearGradient id="heroFade" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="var(--color-wheat-200)" stopOpacity="0.9" />
-          <stop offset="55%" stopColor="var(--color-sand-200)" stopOpacity="0.85" />
-          <stop offset="100%" stopColor="var(--color-sand-100)" stopOpacity="0.95" />
+          <stop offset="0%" stopColor="var(--color-straw-200)" stopOpacity="0.9" />
+          <stop offset="55%" stopColor="var(--color-loam-200)" stopOpacity="0.85" />
+          <stop offset="100%" stopColor="var(--color-loam-100)" stopOpacity="0.95" />
         </linearGradient>
         <pattern
           id="strawStrokes"
@@ -19,7 +19,7 @@ export default function HeroPattern({ className = "" }: { className?: string }) 
           patternUnits="userSpaceOnUse"
           patternTransform="rotate(28)"
         >
-          <line x1="0" y1="0" x2="0" y2="26" stroke="var(--color-wheat-500)" strokeWidth="1.5" strokeOpacity="0.25" />
+          <line x1="0" y1="0" x2="0" y2="26" stroke="var(--color-straw-500)" strokeWidth="1.5" strokeOpacity="0.25" />
         </pattern>
       </defs>
       <rect width="800" height="600" fill="url(#heroFade)" />

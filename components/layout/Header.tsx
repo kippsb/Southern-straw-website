@@ -3,24 +3,25 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu, X, Wheat } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { NAV_LINKS, BUSINESS_NAME, BUSINESS_PHONE_DISPLAY, BUSINESS_PHONE_HREF } from "@/lib/constants";
 import { LinkButton } from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
+import Logo from "@/components/ui/Logo";
 
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-lawn-900/10 bg-sand-100/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-canopy-900/10 bg-loam-100/90 backdrop-blur">
       <Container className="flex items-center justify-between py-4">
         <Link
           href="/"
-          className="flex items-center gap-2 font-display text-xl font-semibold text-lawn-900"
+          className="flex items-center gap-2 font-display text-xl font-semibold text-canopy-900"
           onClick={() => setOpen(false)}
         >
-          <Wheat className="h-6 w-6 text-wheat-600" aria-hidden />
+          <Logo className="h-8 w-8 text-canopy-900" />
           {BUSINESS_NAME}
         </Link>
 
@@ -32,8 +33,8 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`whitespace-nowrap text-sm font-medium transition-colors hover:text-lawn-900 ${
-                  isActive ? "text-lawn-900" : "text-charcoal-700"
+                className={`whitespace-nowrap text-sm font-medium transition-colors hover:text-canopy-900 ${
+                  isActive ? "text-canopy-900" : "text-canopy-700"
                 }`}
               >
                 {link.label}
@@ -45,7 +46,7 @@ export default function Header() {
         <div className="hidden shrink-0 items-center gap-4 lg:flex">
           <a
             href={`tel:${BUSINESS_PHONE_HREF}`}
-            className="hidden whitespace-nowrap text-sm font-medium text-charcoal-700 hover:text-lawn-900 xl:inline"
+            className="hidden whitespace-nowrap text-sm font-medium text-canopy-700 hover:text-canopy-900 xl:inline"
           >
             {BUSINESS_PHONE_DISPLAY}
           </a>
@@ -56,7 +57,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-lawn-900 lg:hidden"
+          className="inline-flex items-center justify-center rounded p-2 text-canopy-900 lg:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((prev) => !prev)}
@@ -66,13 +67,13 @@ export default function Header() {
       </Container>
 
       {open ? (
-        <div className="border-t border-lawn-900/10 bg-sand-100 lg:hidden">
+        <div className="border-t border-canopy-900/10 bg-loam-100 lg:hidden">
           <Container className="flex flex-col gap-4 py-4">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-base font-medium text-charcoal-800"
+                className="text-base font-medium text-canopy-800"
                 onClick={() => setOpen(false)}
               >
                 {link.label}
@@ -80,7 +81,7 @@ export default function Header() {
             ))}
             <a
               href={`tel:${BUSINESS_PHONE_HREF}`}
-              className="text-base font-medium text-charcoal-800"
+              className="text-base font-medium text-canopy-800"
             >
               {BUSINESS_PHONE_DISPLAY}
             </a>

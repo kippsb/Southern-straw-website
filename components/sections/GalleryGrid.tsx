@@ -2,17 +2,17 @@ import PlaceholderTile from "@/components/sections/PlaceholderTile";
 
 export type GalleryItem = {
   label: string;
-  tone?: "wheat" | "lawn" | "clay";
+  tone?: "straw" | "canopy" | "bark";
   imageUrl?: string;
 };
 
 const DEFAULT_ITEMS: GalleryItem[] = [
-  { label: "Fresh Pine Straw Install", tone: "wheat" },
-  { label: "Bed Edging & Cleanup", tone: "lawn" },
-  { label: "Wheat Straw Delivery", tone: "clay" },
-  { label: "Sloped Yard Install", tone: "wheat" },
-  { label: "HOA Common Area Refresh", tone: "lawn" },
-  { label: "Full-Yard Transformation", tone: "clay" },
+  { label: "Fresh Pine Straw Install", tone: "straw" },
+  { label: "Bed Edging & Cleanup", tone: "canopy" },
+  { label: "Wheat Straw Delivery", tone: "bark" },
+  { label: "Sloped Yard Install", tone: "straw" },
+  { label: "HOA Common Area Refresh", tone: "canopy" },
+  { label: "Full-Yard Transformation", tone: "bark" },
 ];
 
 export default function GalleryGrid({ items = DEFAULT_ITEMS }: { items?: GalleryItem[] }) {

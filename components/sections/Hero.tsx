@@ -23,14 +23,14 @@ export default function Hero({
       <Container className="relative py-24 md:py-32">
         <div className="max-w-2xl">
           {eyebrow ? (
-            <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-clay-600">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-moss-700">
               {eyebrow}
             </p>
           ) : null}
-          <h1 className="font-display text-4xl font-semibold leading-tight text-lawn-900 md:text-6xl">
+          <h1 className="font-display text-4xl font-semibold leading-tight text-canopy-900 md:text-6xl">
             {title}
           </h1>
-          <p className="mt-6 text-lg text-charcoal-800 md:text-xl">{subtitle}</p>
+          <p className="mt-6 text-lg text-canopy-800 md:text-xl">{subtitle}</p>
           <div className="mt-10 flex flex-wrap gap-4">
             <LinkButton href={primaryCta.href} variant="primary">
               {primaryCta.label}

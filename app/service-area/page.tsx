@@ -27,15 +27,15 @@ export default function ServiceAreaPage() {
             {SERVICE_AREAS.map((area) => (
               <div
                 key={area.name}
-                className="rounded-2xl border border-lawn-900/10 bg-sand-50 p-8"
+                className="rounded border border-canopy-900/10 bg-fog-50 p-8"
               >
-                <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-wheat-100 text-wheat-700">
+                <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-straw-100 text-straw-700">
                   <MapPin className="h-5 w-5" aria-hidden />
                 </div>
-                <h3 className="font-display text-xl font-semibold text-lawn-900">
+                <h3 className="font-display text-xl font-semibold text-canopy-900">
                   {area.name}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-charcoal-700">
+                <p className="mt-3 text-sm leading-relaxed text-canopy-700">
                   {area.blurb}
                 </p>
               </div>

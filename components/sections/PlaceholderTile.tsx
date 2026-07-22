@@ -1,16 +1,16 @@
 import { Leaf } from "lucide-react";
 
-type Tone = "wheat" | "lawn" | "clay";
+type Tone = "straw" | "canopy" | "bark";
 
 const TONE_CLASSES: Record<Tone, string> = {
-  wheat: "from-wheat-200 via-wheat-100 to-sand-100 text-wheat-800",
-  lawn: "from-lawn-200 via-lawn-100 to-sand-100 text-lawn-800",
-  clay: "from-clay-400/40 via-sand-200 to-sand-100 text-clay-600",
+  straw: "from-straw-200 via-straw-100 to-loam-100 text-straw-800",
+  canopy: "from-canopy-200 via-canopy-100 to-loam-100 text-canopy-800",
+  bark: "from-bark-400/40 via-loam-200 to-loam-100 text-bark-600",
 };
 
 export default function PlaceholderTile({
   label,
-  tone = "wheat",
+  tone = "straw",
   imageUrl,
 }: {
   label: string;
@@ -23,14 +23,14 @@ export default function PlaceholderTile({
       <img
         src={imageUrl}
         alt={label}
-        className="aspect-[4/3] w-full rounded-2xl object-cover"
+        className="aspect-[4/3] w-full rounded object-cover"
       />
     );
   }
 
   return (
     <div
-      className={`flex aspect-[4/3] flex-col items-center justify-center gap-3 rounded-2xl border-2 border-dashed border-lawn-900/15 bg-gradient-to-br p-6 text-center ${TONE_CLASSES[tone]}`}
+      className={`flex aspect-[4/3] flex-col items-center justify-center gap-3 rounded border-2 border-dashed border-canopy-900/15 bg-gradient-to-br p-6 text-center ${TONE_CLASSES[tone]}`}
     >
       <Leaf className="h-6 w-6" aria-hidden />
       <span className="text-sm font-semibold">{label}</span>

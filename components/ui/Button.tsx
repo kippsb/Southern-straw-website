@@ -5,15 +5,15 @@ type Variant = "primary" | "secondary" | "outline";
 
 const VARIANT_CLASSES: Record<Variant, string> = {
   primary:
-    "bg-wheat-500 text-lawn-900 hover:bg-wheat-400 focus-visible:outline-wheat-600",
+    "bg-straw-500 text-canopy-900 hover:bg-straw-600 focus-visible:outline-straw-600",
   secondary:
-    "bg-lawn-800 text-sand-50 hover:bg-lawn-700 focus-visible:outline-lawn-900",
+    "bg-canopy-900 text-fog-50 hover:bg-canopy-800 focus-visible:outline-canopy-900",
   outline:
-    "border border-lawn-800 text-lawn-800 hover:bg-lawn-800 hover:text-sand-50 focus-visible:outline-lawn-800",
+    "border-[1.5px] border-canopy-900 bg-transparent text-canopy-900 hover:bg-loam-200 focus-visible:outline-canopy-900",
 };
 
 const BASE_CLASSES =
-  "inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold tracking-wide transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2";
+  "inline-flex items-center justify-center gap-2 rounded px-6 py-3 text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2";
 
 export function Button({
   variant = "primary",

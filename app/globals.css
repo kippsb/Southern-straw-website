@@ -1,61 +1,68 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f4ebdd;
-  --foreground: #2b2620;
+  --background: #f0e9dc;
+  --foreground: #1e2b1f;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --font-display: var(--font-fraunces), Georgia, serif;
-  --font-body: var(--font-inter), Arial, Helvetica, sans-serif;
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-body: var(--font-dm-sans), Arial, Helvetica, sans-serif;
 
-  /* Warm straw gold — primary accent */
-  --color-wheat-50: #fdf8ee;
-  --color-wheat-100: #faeed2;
-  --color-wheat-200: #f3dba0;
-  --color-wheat-300: #ebc66d;
-  --color-wheat-400: #e2b34d;
-  --color-wheat-500: #d9a441;
-  --color-wheat-600: #bc8830;
-  --color-wheat-700: #96692a;
-  --color-wheat-800: #74501f;
-  --color-wheat-900: #563a17;
+  /* Straw Gold — primary accent. Headlines, CTAs. #C8983A is the exact brand value. */
+  --color-straw-50: #fbf6ea;
+  --color-straw-100: #f5e9cc;
+  --color-straw-200: #ead39d;
+  --color-straw-300: #ddba6e;
+  --color-straw-400: #d2a54e;
+  --color-straw-500: #c8983a;
+  --color-straw-600: #b0832f;
+  --color-straw-700: #8c6825;
+  --color-straw-800: #6a4e1c;
+  --color-straw-900: #4c3714;
 
-  /* Deep pine / lawn green — headlines, dark sections */
-  --color-lawn-50: #eef2ee;
-  --color-lawn-100: #d6e0d6;
-  --color-lawn-200: #aec2af;
-  --color-lawn-300: #86a387;
-  --color-lawn-400: #5d8360;
-  --color-lawn-500: #446548;
-  --color-lawn-600: #3a5a3d;
-  --color-lawn-700: #2f4a32;
-  --color-lawn-800: #253a27;
-  --color-lawn-900: #1a2a1c;
+  /* Deep Canopy — primary dark. Headlines, dark sections, body text. #1E2B1F is the exact brand value. */
+  --color-canopy-50: #eef2ee;
+  --color-canopy-100: #d7e0d6;
+  --color-canopy-200: #afc2ac;
+  --color-canopy-300: #87a383;
+  --color-canopy-400: #5f845a;
+  --color-canopy-500: #4c6d48;
+  --color-canopy-600: #3b5938;
+  --color-canopy-700: #2e4a2c;
+  --color-canopy-800: #253b23;
+  --color-canopy-900: #1e2b1f;
 
-  /* Sandy neutral — backgrounds, cards */
-  --color-sand-50: #fffdfa;
-  --color-sand-100: #fbf6ee;
-  --color-sand-200: #f4ebdd;
-  --color-sand-300: #e9dbc3;
-  --color-sand-400: #dcc7a4;
+  /* Sandy Loam — light background. Never pure white. #F0E9DC is the exact brand value. */
+  --color-loam-50: #fcfaf5;
+  --color-loam-100: #f7f1e7;
+  --color-loam-200: #f0e9dc;
+  --color-loam-300: #e2d3b7;
+  --color-loam-400: #d2bc93;
 
-  /* Warm charcoal — body text */
-  --color-charcoal-700: #4a423a;
-  --color-charcoal-800: #362f28;
-  --color-charcoal-900: #2b2620;
+  /* Fog White — surface white. Cards, inputs. Slightly warmer than Sandy Loam. #FAF8F4 is the exact brand value. */
+  --color-fog-50: #faf8f4;
+  --color-fog-100: #f5f2ea;
+  --color-fog-200: #ede7da;
 
-  /* Terracotta clay — sparing accent */
-  --color-clay-400: #cb8158;
-  --color-clay-500: #b5622e;
-  --color-clay-600: #954e23;
+  /* Spanish Moss — secondary/supporting. Captions, labels, borders. #8A9B7E is the exact brand value. */
+  --color-moss-300: #c7cfbc;
+  --color-moss-400: #a9b79a;
+  --color-moss-500: #8a9b7e;
+  --color-moss-600: #6f7e63;
+  --color-moss-700: #57634c;
+
+  /* Bark Brown — tertiary accent. Borders, hover states. #5C3D1E is the exact brand value. */
+  --color-bark-400: #8c6b45;
+  --color-bark-500: #5c3d1e;
+  --color-bark-600: #4a3018;
 }
 
 body {
-  background: var(--color-sand-100);
-  color: var(--color-charcoal-900);
+  background: var(--color-loam-200);
+  color: var(--color-canopy-900);
   font-family: var(--font-body);
 }

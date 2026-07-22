@@ -76,11 +76,11 @@ export default function QuoteForm() {
 
   if (status === "success") {
     return (
-      <div className="rounded-2xl border border-lawn-900/10 bg-sand-50 p-10 text-center">
-        <h3 className="font-display text-2xl font-semibold text-lawn-900">
+      <div className="rounded border border-canopy-900/10 bg-fog-50 p-10 text-center">
+        <h3 className="font-display text-2xl font-semibold text-canopy-900">
           Thanks — we&apos;ve got your request.
         </h3>
-        <p className="mt-3 text-charcoal-700">
+        <p className="mt-3 text-canopy-700">
           We&apos;ll follow up within one business day to talk through your project.
         </p>
       </div>
@@ -90,7 +90,7 @@ export default function QuoteForm() {
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-10">
       {status === "error" ? (
-        <div className="rounded-lg bg-clay-400/10 p-4 text-sm text-clay-600">
+        <div className="rounded bg-bark-400/10 p-4 text-sm text-bark-600">
           Something went wrong sending your request. Please call or email us
           directly at{" "}
           <a href={`tel:${BUSINESS_PHONE_HREF}`} className="font-semibold underline">
@@ -105,7 +105,7 @@ export default function QuoteForm() {
       ) : null}
 
       <section>
-        <h3 className="font-display text-lg font-semibold text-lawn-900">About You</h3>
+        <h3 className="font-display text-lg font-semibold text-canopy-900">About You</h3>
         <div className="mt-4 grid gap-5 sm:grid-cols-2">
           <FieldWrapper label="First name" htmlFor="firstName" error={errors.firstName}>
             <input
@@ -160,7 +160,7 @@ export default function QuoteForm() {
       </section>
 
       <section>
-        <h3 className="font-display text-lg font-semibold text-lawn-900">About the Job</h3>
+        <h3 className="font-display text-lg font-semibold text-canopy-900">About the Job</h3>
         <div className="mt-4 grid gap-5 sm:grid-cols-2">
           <FieldWrapper
             label="Service needed"
@@ -208,7 +208,7 @@ export default function QuoteForm() {
                 <label
                   key={val}
                   htmlFor={`hasSlopeOrHardAccess-${val}`}
-                  className="flex items-center gap-2 text-sm text-charcoal-800"
+                  className="flex items-center gap-2 text-sm text-canopy-800"
                 >
                   <input
                     id={`hasSlopeOrHardAccess-${val}`}
@@ -217,7 +217,7 @@ export default function QuoteForm() {
                     value={val}
                     checked={form.hasSlopeOrHardAccess === val}
                     onChange={(e) => update("hasSlopeOrHardAccess", e.target.value)}
-                    className="h-4 w-4 accent-lawn-700"
+                    className="h-4 w-4 accent-canopy-700"
                   />
                   {val === "yes" ? "Yes" : "No"}
                 </label>

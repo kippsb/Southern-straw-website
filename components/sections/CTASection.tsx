@@ -15,12 +15,12 @@ export default function CTASection({
   return (
     <section className="py-20">
       <Container>
-        <div className="rounded-3xl bg-wheat-100 px-8 py-14 text-center md:px-16">
-          <h2 className="font-display text-3xl font-semibold text-lawn-900 md:text-4xl">
+        <div className="rounded bg-straw-100 px-8 py-14 text-center md:px-16">
+          <h2 className="font-display text-3xl font-semibold text-canopy-900 md:text-4xl">
             {heading}
           </h2>
           {subheading ? (
-            <p className="mx-auto mt-4 max-w-xl text-lg text-charcoal-800">
+            <p className="mx-auto mt-4 max-w-xl text-lg text-canopy-800">
               {subheading}
             </p>
           ) : null}
