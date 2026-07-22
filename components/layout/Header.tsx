@@ -51,7 +51,7 @@ export default function Header() {
             {BUSINESS_PHONE_DISPLAY}
           </a>
           <LinkButton href="/contact" variant="primary" className="whitespace-nowrap">
-            Get a Free Quote
+            Revive Your Yard
           </LinkButton>
         </div>
 
@@ -86,7 +86,7 @@ export default function Header() {
               {BUSINESS_PHONE_DISPLAY}
             </a>
             <LinkButton href="/contact" variant="primary" className="w-full">
-              Get a Free Quote
+              Revive Your Yard
             </LinkButton>
           </Container>
         </div>

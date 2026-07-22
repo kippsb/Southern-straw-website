@@ -13,7 +13,7 @@ export default function ServiceAreaTeaser() {
           </h2>
           <p className="mt-4 text-lg text-fog-200/90">
             From the Bluffton backroads to the Hilton Head shoreline and into
-            Savannah — we know this land, and we treat every yard like
+            Savannah, we know this land and treat every yard like
             it&apos;s our own.
           </p>
           <div className="mt-8">

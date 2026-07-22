@@ -7,7 +7,7 @@ const QUOTE_FROM_EMAIL = process.env.QUOTE_FROM_EMAIL ?? "quotes@southernstraw.c
 export async function sendQuoteEmail(data: QuoteRequest): Promise<void> {
   if (!RESEND_API_KEY) {
     console.log(
-      "[quote] RESEND_API_KEY not set — logging submission instead of sending email:"
+      "[quote] RESEND_API_KEY not set. Logging submission instead of sending email:"
     );
     console.log(JSON.stringify(data, null, 2));
     return;
@@ -20,7 +20,7 @@ export async function sendQuoteEmail(data: QuoteRequest): Promise<void> {
     from: QUOTE_FROM_EMAIL,
     to: QUOTE_TO_EMAIL,
     replyTo: data.email,
-    subject: `New quote request — ${data.firstName} ${data.lastName}`,
+    subject: `New quote request: ${data.firstName} ${data.lastName}`,
     text: [
       `Name: ${data.firstName} ${data.lastName}`,
       `Phone: ${data.phone}`,

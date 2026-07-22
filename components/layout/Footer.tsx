@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { Phone, Mail } from "lucide-react";
+import { Phone, MessageCircle, Mail } from "lucide-react";
 import {
   NAV_LINKS,
   BUSINESS_NAME,
   BUSINESS_PHONE_DISPLAY,
   BUSINESS_PHONE_HREF,
+  BUSINESS_SMS_HREF,
   BUSINESS_EMAIL,
   SERVICE_AREAS,
 } from "@/lib/constants";
@@ -53,6 +54,12 @@ export default function Footer() {
               <Phone className="h-4 w-4 text-straw-400" aria-hidden />
               <a href={`tel:${BUSINESS_PHONE_HREF}`} className="hover:text-fog-50">
                 {BUSINESS_PHONE_DISPLAY}
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <MessageCircle className="h-4 w-4 text-straw-400" aria-hidden />
+              <a href={BUSINESS_SMS_HREF} className="hover:text-fog-50">
+                Text us
               </a>
             </li>
             <li className="flex items-center gap-2">

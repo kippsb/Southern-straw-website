@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { quoteSchema, SERVICE_NEEDED_OPTIONS, TIMING_OPTIONS } from "@/lib/validation";
 import { BUSINESS_PHONE_DISPLAY, BUSINESS_PHONE_HREF, BUSINESS_EMAIL } from "@/lib/constants";
 import { FieldWrapper, inputClasses } from "@/components/forms/form-fields";
@@ -32,9 +33,10 @@ const INITIAL_STATE: FormState = {
   notes: "",
 };
 
-type Status = "idle" | "submitting" | "success" | "error";
+type Status = "idle" | "submitting" | "error";
 
 export default function QuoteForm() {
+  const router = useRouter();
   const [form, setForm] = useState<FormState>(INITIAL_STATE);
   const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({});
   const [status, setStatus] = useState<Status>("idle");
@@ -68,23 +70,10 @@ export default function QuoteForm() {
         body: JSON.stringify(parsed.data),
       });
       if (!res.ok) throw new Error("Request failed");
-      setStatus("success");
+      router.push("/thank-you");
     } catch {
       setStatus("error");
     }
-  }
-
-  if (status === "success") {
-    return (
-      <div className="rounded border border-canopy-900/10 bg-fog-50 p-10 text-center">
-        <h3 className="font-display text-2xl font-semibold text-canopy-900">
-          Thanks — we&apos;ve got your request.
-        </h3>
-        <p className="mt-3 text-canopy-700">
-          We&apos;ll follow up within one business day to talk through your project.
-        </p>
-      </div>
-    );
   }
 
   return (

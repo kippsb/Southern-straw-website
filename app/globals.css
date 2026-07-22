@@ -12,7 +12,7 @@
   --font-display: var(--font-playfair), Georgia, serif;
   --font-body: var(--font-dm-sans), Arial, Helvetica, sans-serif;
 
-  /* Straw Gold — primary accent. Headlines, CTAs. #C8983A is the exact brand value. */
+  /* Straw Gold: primary accent. Headlines, CTAs. #C8983A is the exact brand value. */
   --color-straw-50: #fbf6ea;
   --color-straw-100: #f5e9cc;
   --color-straw-200: #ead39d;
@@ -24,7 +24,7 @@
   --color-straw-800: #6a4e1c;
   --color-straw-900: #4c3714;
 
-  /* Deep Canopy — primary dark. Headlines, dark sections, body text. #1E2B1F is the exact brand value. */
+  /* Deep Canopy: primary dark. Headlines, dark sections, body text. #1E2B1F is the exact brand value. */
   --color-canopy-50: #eef2ee;
   --color-canopy-100: #d7e0d6;
   --color-canopy-200: #afc2ac;
@@ -36,26 +36,26 @@
   --color-canopy-800: #253b23;
   --color-canopy-900: #1e2b1f;
 
-  /* Sandy Loam — light background. Never pure white. #F0E9DC is the exact brand value. */
+  /* Sandy Loam: light background. Never pure white. #F0E9DC is the exact brand value. */
   --color-loam-50: #fcfaf5;
   --color-loam-100: #f7f1e7;
   --color-loam-200: #f0e9dc;
   --color-loam-300: #e2d3b7;
   --color-loam-400: #d2bc93;
 
-  /* Fog White — surface white. Cards, inputs. Slightly warmer than Sandy Loam. #FAF8F4 is the exact brand value. */
+  /* Fog White: surface white. Cards, inputs. Slightly warmer than Sandy Loam. #FAF8F4 is the exact brand value. */
   --color-fog-50: #faf8f4;
   --color-fog-100: #f5f2ea;
   --color-fog-200: #ede7da;
 
-  /* Spanish Moss — secondary/supporting. Captions, labels, borders. #8A9B7E is the exact brand value. */
+  /* Spanish Moss: secondary/supporting. Captions, labels, borders. #8A9B7E is the exact brand value. */
   --color-moss-300: #c7cfbc;
   --color-moss-400: #a9b79a;
   --color-moss-500: #8a9b7e;
   --color-moss-600: #6f7e63;
   --color-moss-700: #57634c;
 
-  /* Bark Brown — tertiary accent. Borders, hover states. #5C3D1E is the exact brand value. */
+  /* Bark Brown: tertiary accent. Borders, hover states. #5C3D1E is the exact brand value. */
   --color-bark-400: #8c6b45;
   --color-bark-500: #5c3d1e;
   --color-bark-600: #4a3018;
@@ -65,4 +65,13 @@ body {
   background: var(--color-loam-200);
   color: var(--color-canopy-900);
   font-family: var(--font-body);
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

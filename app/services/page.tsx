@@ -5,11 +5,29 @@ import ServiceCard from "@/components/sections/ServiceCard";
 import CTASection from "@/components/sections/CTASection";
 import Container from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/Button";
+import { OG_IMAGE } from "@/lib/constants";
+
+const TITLE = "Pine Straw Delivery, Installation & Full-Service Packages";
+const DESCRIPTION =
+  "Choose pine straw delivery, professional installation, or a full-service package. Serving homeowners, HOAs, and businesses across Bluffton, Hilton Head, and Savannah.";
 
 export const metadata: Metadata = {
-  title: "Services | Southern Straw",
-  description:
-    "Straw delivery, installation, or full-service packages for homeowners and businesses across the Low Country.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: {
+    canonical: "/services",
+  },
+  openGraph: {
+    url: "/services",
+    title: `${TITLE} | Southern Straw`,
+    description: DESCRIPTION,
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    title: `${TITLE} | Southern Straw`,
+    description: DESCRIPTION,
+    images: [OG_IMAGE.url],
+  },
 };
 
 export default function ServicesPage() {
@@ -17,7 +35,7 @@ export default function ServicesPage() {
     <>
       <Hero
         eyebrow="Services"
-        title="Delivery, Installation, or Both — Done Right."
+        title="Delivery, Installation, or Both: Done Right."
         subtitle="Whether you're the kind of homeowner who likes to get your hands in the dirt or you'd rather hand it off to the pros, we make it simple."
         primaryCta={{ label: "Get a Quote for Your Project", href: "/contact" }}
       />
@@ -33,12 +51,12 @@ export default function ServicesPage() {
             <ServiceCard
               icon={HardHat}
               title="Installation"
-              description="Our crew handles placement, edging, and cleanup from start to finish — you come home to a finished yard."
+              description="Our crew handles placement, edging, and cleanup from start to finish. You come home to a finished yard."
             />
             <ServiceCard
               icon={PackageCheck}
               title="Full Service"
-              description="Delivery and installation together — our most popular option, and the simplest way to get it done in one visit."
+              description="Delivery and installation together: our most popular option, and the simplest way to get it done in one visit."
             />
           </div>
         </Container>
@@ -68,8 +86,8 @@ export default function ServicesPage() {
             <div>
               <h3 className="font-semibold text-canopy-900">Wheat Straw</h3>
               <p className="mt-2 text-sm leading-relaxed text-canopy-700">
-                A lighter, golden look that breaks down into the soil faster —
-                a good fit for fresh beds, new plantings, or a seasonal
+                A lighter, golden look that breaks down into the soil faster.
+                A good fit for fresh beds, new plantings, or a seasonal
                 refresh.
               </p>
             </div>

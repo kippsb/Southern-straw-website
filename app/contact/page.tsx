@@ -1,17 +1,37 @@
 import type { Metadata } from "next";
-import { Phone, Mail, Clock } from "lucide-react";
+import { Phone, MessageCircle, Mail, Clock } from "lucide-react";
 import Container from "@/components/ui/Container";
 import QuoteForm from "@/components/forms/QuoteForm";
 import {
   BUSINESS_PHONE_DISPLAY,
   BUSINESS_PHONE_HREF,
+  BUSINESS_SMS_HREF,
   BUSINESS_EMAIL,
   RESPONSE_TIME_NOTE,
+  OG_IMAGE,
 } from "@/lib/constants";
 
+const TITLE = "Get a Free Pine Straw Quote";
+const DESCRIPTION =
+  "Request a free pine straw delivery or installation quote. Serving Bluffton, Hilton Head Island, Savannah, and the Low Country of South Carolina.";
+
 export const metadata: Metadata = {
-  title: "Get a Quote | Southern Straw",
-  description: "Request a free straw delivery or installation quote across the Low Country.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    url: "/contact",
+    title: `${TITLE} | Southern Straw`,
+    description: DESCRIPTION,
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    title: `${TITLE} | Southern Straw`,
+    description: DESCRIPTION,
+    images: [OG_IMAGE.url],
+  },
 };
 
 export default function ContactPage() {
@@ -27,7 +47,7 @@ export default function ContactPage() {
           </h1>
           <p className="mt-4 text-lg text-canopy-700">
             Tell us about your space and we&apos;ll get back to you with a
-            straightforward quote — usually within one business day.
+            straightforward quote, usually within one business day.
           </p>
         </div>
 
@@ -36,9 +56,21 @@ export default function ContactPage() {
             <div className="flex items-start gap-3">
               <Phone className="mt-0.5 h-5 w-5 flex-none text-straw-600" aria-hidden />
               <div>
-                <p className="text-sm font-semibold text-canopy-900">Call or text</p>
+                <p className="text-sm font-semibold text-canopy-900">Call</p>
                 <a
                   href={`tel:${BUSINESS_PHONE_HREF}`}
+                  className="text-sm text-canopy-700 hover:text-canopy-900"
+                >
+                  {BUSINESS_PHONE_DISPLAY}
+                </a>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <MessageCircle className="mt-0.5 h-5 w-5 flex-none text-straw-600" aria-hidden />
+              <div>
+                <p className="text-sm font-semibold text-canopy-900">Text</p>
+                <a
+                  href={BUSINESS_SMS_HREF}
                   className="text-sm text-canopy-700 hover:text-canopy-900"
                 >
                   {BUSINESS_PHONE_DISPLAY}

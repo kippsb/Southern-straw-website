@@ -1,14 +1,33 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Hammer, Clock, MapPinned, HandCoins } from "lucide-react";
 import Hero from "@/components/sections/Hero";
 import ValueProps from "@/components/sections/ValueProps";
 import CTASection from "@/components/sections/CTASection";
 import Container from "@/components/ui/Container";
-import Logo from "@/components/ui/Logo";
+import { OG_IMAGE } from "@/lib/constants";
+
+const TITLE = "About Us: Low Country Pine Straw Specialists";
+const DESCRIPTION =
+  "Southern Straw's story, crew, and values. A local pine straw delivery and installation company serving Bluffton, Hilton Head, and Savannah.";
 
 export const metadata: Metadata = {
-  title: "About | Southern Straw",
-  description: "Southern Straw's story, crew, and values — Low Country straw delivery and installation done right.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    url: "/about",
+    title: `${TITLE} | Southern Straw`,
+    description: DESCRIPTION,
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    title: `${TITLE} | Southern Straw`,
+    description: DESCRIPTION,
+    images: [OG_IMAGE.url],
+  },
 };
 
 export default function AboutPage() {
@@ -23,8 +42,14 @@ export default function AboutPage() {
 
       <section className="py-20">
         <Container className="grid gap-10 md:grid-cols-[1fr_1.2fr] md:items-center">
-          <div className="flex aspect-square items-center justify-center rounded border-2 border-dashed border-canopy-900/15 bg-gradient-to-br from-straw-100 via-loam-100 to-canopy-100">
-            <Logo className="h-24 w-24 text-canopy-900" />
+          <div className="relative aspect-square overflow-hidden rounded">
+            <Image
+              src="/images/gallery/38-wraparound-foundation-hostas-ferns.png"
+              alt="A wraparound foundation planting bed finished with fresh pine straw"
+              fill
+              sizes="(min-width: 768px) 40vw, 100vw"
+              className="object-cover"
+            />
           </div>
           <div>
             <h2 className="font-display text-3xl font-semibold text-canopy-900">
@@ -32,7 +57,7 @@ export default function AboutPage() {
             </h2>
             <p className="mt-4 text-canopy-700">
               Southern Straw started the way a lot of good Low Country
-              businesses do — with a truck, a reputation for showing up, and
+              businesses do: with a truck, a reputation for showing up, and
               neighbors asking for help getting their yards ready for the
               season. We&apos;ve spent years delivering and installing straw as a
               trusted subcontractor for landscapers across Bluffton, Hilton

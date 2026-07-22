@@ -1,11 +1,11 @@
-# Southern Straw — Brand Guide
+# Southern Straw Brand Guide
 **For use with Claude Code and any AI-assisted development**
 
 ---
 
 ## Who We Are
 
-Southern Straw is a Low Country landscaping company that does one thing exceptionally well: laying pine straw and ground cover across residential and commercial properties in coastal South Carolina. We are not a full-service lawn company. We are specialists. Our work is physical, seasonal, seasonal-smelling, and deeply rooted in the Lowcountry's landscape — live oaks, sandy soil, hot light, and the particular warmth of fresh pine straw in the afternoon sun.
+Southern Straw is a Low Country landscaping company that does one thing exceptionally well: laying pine straw and ground cover across residential and commercial properties in coastal South Carolina. We are not a full-service lawn company. We are specialists. Our work is physical, seasonal, seasonal-smelling, and deeply rooted in the Lowcountry's landscape: live oaks, sandy soil, hot light, and the particular warmth of fresh pine straw in the afternoon sun.
 
 Our customers are homeowners who care about curb appeal, HOA managers, and property developers who want their landscapes to look cared-for year-round. They value reliability and craft over flash.
 
@@ -13,17 +13,19 @@ Our customers are homeowners who care about curb appeal, HOA managers, and prope
 
 ## Voice
 
-**The analogy:** Southern Straw speaks the way a good contractor does — confident, plain, no upselling. Not salesy. Not corporate. Not precious. If a knowledgeable neighbor who lays straw for a living told you what you needed to know, that's the voice.
+**The analogy:** Southern Straw speaks the way a good contractor does: confident, plain, no upselling. Not salesy. Not corporate. Not precious. If a knowledgeable neighbor who lays straw for a living told you what you needed to know, that's the voice.
 
 ### Principles
 
 **Plain and direct.** Use short sentences. Say what the thing does. Avoid filler words like "comprehensive," "solutions," "world-class," or "seamless." Nobody who lays straw for a living talks that way.
 
-**Warm, not folksy.** The Low Country has a distinctive culture and we live in it — we don't perform it. No forced Southern charm, no "y'all" unless it's a natural fit, no overuse of regional color. The warmth comes through in confidence and ease, not affectations.
+**Warm, not folksy.** The Low Country has a distinctive culture and we live in it. We don't perform it. No forced Southern charm, no "y'all" unless it's a natural fit, no overuse of regional color. The warmth comes through in confidence and ease, not affectations.
 
 **Grounded in the work.** We can talk about soil, drainage, bale counts, coverage estimates, and seasonal timing because we actually know these things. Specificity is more trustworthy than enthusiasm.
 
-**Never salesy.** We don't push. We inform. The customer came to us — we explain what they need and let the work speak.
+**Never salesy.** We don't push. We inform. The customer came to us. We explain what they need and let the work speak.
+
+**No em dashes, ever.** Never use an em dash (—) anywhere in site copy, code comments, documentation, or any written material for this brand. Use a period, comma, or colon instead, or restructure the sentence. Em dashes read as AI-generated filler and undercut the plain, direct voice.
 
 ### Voice Examples
 
@@ -38,7 +40,7 @@ Our customers are homeowners who care about curb appeal, HOA managers, and prope
 
 - **Website headlines:** Bold, spare, factual. One strong claim per section.
 - **Service descriptions:** Direct. Cover what's included, what's not, and why it matters.
-- **Calls to action:** Low-pressure. "Get an estimate" over "Book now!" — we're not selling concert tickets.
+- **Calls to action:** Low-pressure. "Get an estimate" over "Book now!" We're not selling concert tickets.
 - **Error or empty states:** Matter-of-fact. "No jobs scheduled yet" not "Looks like you're all clear!"
 
 ---
@@ -50,7 +52,7 @@ The palette draws from the literal materials and light of the Low Country: pine 
 | Name | Hex | Use |
 |---|---|---|
 | **Straw Gold** | `#C8983A` | Primary brand color. Headlines, accents, CTAs. The color of dry pine straw in afternoon light. |
-| **Deep Canopy** | `#1E2B1F` | Primary dark. Backgrounds (dark mode), text on light. Near-black with green undertone — the shade under a live oak. |
+| **Deep Canopy** | `#1E2B1F` | Primary dark. Backgrounds (dark mode), text on light. Near-black with green undertone, the shade under a live oak. |
 | **Sandy Loam** | `#F0E9DC` | Light background. Off-white with a warm, earthy cast. Never pure white. |
 | **Spanish Moss** | `#8A9B7E` | Secondary / supporting. Muted sage green. Used for secondary text, borders, subtle accents. |
 | **Bark Brown** | `#5C3D1E` | Tertiary accent. Grounding color for borders, hover states, footer backgrounds. Deep pine bark. |
@@ -59,7 +61,7 @@ The palette draws from the literal materials and light of the Low Country: pine 
 ### Usage Rules
 
 - **Straw Gold** on **Deep Canopy** is the signature pairing. Use for hero sections and primary CTAs.
-- Never put **Straw Gold** on **Sandy Loam** — insufficient contrast.
+- Never put **Straw Gold** on **Sandy Loam**: insufficient contrast.
 - **Spanish Moss** is a supporting player, never a hero color.
 - Avoid pure `#FFFFFF` or `#000000` anywhere. The brand lives in the warmth between those extremes.
 
@@ -67,7 +69,7 @@ The palette draws from the literal materials and light of the Low Country: pine 
 
 ## Typography
 
-The type system pairs a workhorse serif — the kind you'd find on a well-made seed catalog or a county agricultural extension pamphlet — with a clean, utilitarian sans for body and UI. Nothing trendy. Nothing that will feel dated in three years.
+The type system pairs a workhorse serif, the kind you'd find on a well-made seed catalog or a county agricultural extension pamphlet, with a clean, utilitarian sans for body and UI. Nothing trendy. Nothing that will feel dated in three years.
 
 ### Typefaces
 
@@ -92,14 +94,15 @@ The type system pairs a workhorse serif — the kind you'd find on a well-made s
 | H3 (Subsection) | DM Sans | 1.25rem | 600 | Deep Canopy |
 | Body | DM Sans | 1rem | 400 | Deep Canopy |
 | Caption / Label | DM Sans | 0.8125rem | 500 | Spanish Moss |
-| Button | DM Sans | 0.9375rem | 600 | — (see buttons) |
+| Button | DM Sans | 0.9375rem | 600 | N/A (see buttons) |
 | Nav | DM Sans | 0.9375rem | 500 | Deep Canopy |
 
 ### Do Not Use
 
-- Script or handwritten fonts — they undercut the craft-over-charm positioning
+- Script or handwritten fonts: they undercut the craft-over-charm positioning
 - All-caps body copy
 - More than two typefaces
+- Em dashes in any copy, anywhere
 
 ---
 
@@ -108,7 +111,7 @@ The type system pairs a workhorse serif — the kind you'd find on a well-made s
 **Primary CTA:**
 - Background: `Straw Gold (#C8983A)`
 - Text: `Deep Canopy (#1E2B1F)`
-- Border radius: `4px` — utilitarian, not pill-shaped
+- Border radius: `4px`, utilitarian, not pill-shaped
 - Hover: darken background to `#B0832F`
 - Label style: Sentence case. "Get an estimate" not "GET AN ESTIMATE"
 
@@ -130,10 +133,10 @@ The type system pairs a workhorse serif — the kind you'd find on a well-made s
 
 *(For use when selecting or generating photos)*
 
-- Pine straw being laid by hand or by a crew — the work itself, not stock photo smiles
+- Pine straw being laid by hand or by a crew: the work itself, not stock photo smiles
 - Lowcountry yards: live oaks, sandy soil, established plantings
 - Before/after of freshly laid straw beds
-- Golden-hour light — warm, late afternoon
+- Golden-hour light: warm, late afternoon
 - No stock imagery of people in branded shirts shaking hands
 - No bright, oversaturated greens (that's Florida lawn care, not South Carolina pine straw)
 
@@ -144,9 +147,9 @@ The type system pairs a workhorse serif — the kind you'd find on a well-made s
 Use this as a negative constraint when making design or copy decisions:
 
 - Not a full-service landscaping firm (no mowing, planting, irrigation)
-- Not a franchise or national chain — locally owned, Lowcountry-specific
-- Not premium in a luxury sense — premium in a craft and reliability sense
-- Not flashy — the best compliment a customer gives us is "they just handled it"
+- Not a franchise or national chain: locally owned, Lowcountry-specific
+- Not premium in a luxury sense: premium in a craft and reliability sense
+- Not flashy: the best compliment a customer gives us is "they just handled it"
 
 ---
 
@@ -156,12 +159,13 @@ When building the Southern Straw website or any related tool:
 
 1. Import Playfair Display and DM Sans from Google Fonts.
 2. Define all six palette colors as CSS custom properties on `:root`.
-3. Default all backgrounds to `Sandy Loam` or `Fog White` — never pure white.
+3. Default all backgrounds to `Sandy Loam` or `Fog White`. Never pure white.
 4. All primary CTAs use the Straw Gold + Deep Canopy button style.
-5. Border radii should be small (`4px` max) — avoid pill/rounded cards.
+5. Border radii should be small (`4px` max). Avoid pill/rounded cards.
 6. Section spacing should feel generous. The Low Country is not cramped.
 7. Mobile-first. Many customers will be homeowners checking the site from a phone while outside.
-8. No animations that feel tech-startup — if there's motion, it's slow and deliberate (like straw settling).
+8. No animations that feel tech-startup. If there's motion, it's slow and deliberate (like straw settling).
+9. Never use an em dash (—) in any copy, code comment, or documentation. Use a period, comma, or colon instead.
 
 ---
 

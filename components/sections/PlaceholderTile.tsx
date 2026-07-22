@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Leaf } from "lucide-react";
 
 type Tone = "straw" | "canopy" | "bark";
@@ -19,12 +20,15 @@ export default function PlaceholderTile({
 }) {
   if (imageUrl) {
     return (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
-        src={imageUrl}
-        alt={label}
-        className="aspect-[4/3] w-full rounded object-cover"
-      />
+      <div className="relative aspect-[4/3] w-full overflow-hidden rounded">
+        <Image
+          src={imageUrl}
+          alt={label}
+          fill
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+          className="object-cover"
+        />
+      </div>
     );
   }
 

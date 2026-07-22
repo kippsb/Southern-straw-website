@@ -1,4 +1,5 @@
 import PlaceholderTile from "@/components/sections/PlaceholderTile";
+import { GALLERY_PHOTOS } from "@/lib/gallery";
 
 export type GalleryItem = {
   label: string;
@@ -6,14 +7,7 @@ export type GalleryItem = {
   imageUrl?: string;
 };
 
-const DEFAULT_ITEMS: GalleryItem[] = [
-  { label: "Fresh Pine Straw Install", tone: "straw" },
-  { label: "Bed Edging & Cleanup", tone: "canopy" },
-  { label: "Wheat Straw Delivery", tone: "bark" },
-  { label: "Sloped Yard Install", tone: "straw" },
-  { label: "HOA Common Area Refresh", tone: "canopy" },
-  { label: "Full-Yard Transformation", tone: "bark" },
-];
+const DEFAULT_ITEMS: GalleryItem[] = GALLERY_PHOTOS;
 
 export default function GalleryGrid({ items = DEFAULT_ITEMS }: { items?: GalleryItem[] }) {
   return (

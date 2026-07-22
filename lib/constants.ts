@@ -1,8 +1,21 @@
 export const BUSINESS_NAME = "Southern Straw";
 
-export const BUSINESS_PHONE_DISPLAY = "(843) 555-0142";
-export const BUSINESS_PHONE_HREF = "+18435550142";
-export const BUSINESS_EMAIL = "hello@southernstraw.com";
+// Placeholder until the site is deployed to a real, registered domain.
+// Update this the moment a production domain exists: it drives metadataBase,
+// canonical URLs, the sitemap, robots.txt, and JSON-LD.
+export const SITE_URL = "https://www.southernstraw.com";
+
+export const OG_IMAGE = {
+  url: "/images/gallery/40-symmetrical-walkway-porch.png",
+  width: 2400,
+  height: 1792,
+  alt: "A front walkway lined with fresh pine straw beds leading to a covered porch",
+};
+
+export const BUSINESS_PHONE_DISPLAY = "(843) 535-7227";
+export const BUSINESS_PHONE_HREF = "+18435357227";
+export const BUSINESS_SMS_HREF = "sms:+18435357227";
+export const BUSINESS_EMAIL = "agro3559@gmail.com";
 
 export const RESPONSE_TIME_NOTE = "We typically reply within one business day.";
 
@@ -34,6 +47,6 @@ export const SERVICE_AREAS: ServiceArea[] = [
   {
     name: "Savannah & the Extended Low Country",
     blurb:
-      "We extend into Savannah and the surrounding Low Country for select projects — reach out and we'll confirm coverage for your address.",
+      "We extend into Savannah and the surrounding Low Country for select projects. Reach out and we'll confirm coverage for your address.",
   },
 ];

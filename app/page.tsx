@@ -3,7 +3,7 @@ import Hero from "@/components/sections/Hero";
 import TrustBar from "@/components/sections/TrustBar";
 import ServiceCard from "@/components/sections/ServiceCard";
 import ServiceAreaTeaser from "@/components/sections/ServiceAreaTeaser";
-import GalleryGrid from "@/components/sections/GalleryGrid";
+import GalleryScroller from "@/components/sections/GalleryScroller";
 import CTASection from "@/components/sections/CTASection";
 import Container from "@/components/ui/Container";
 import { LinkButton } from "@/components/ui/Button";
@@ -14,9 +14,13 @@ export default function Home() {
       <Hero
         eyebrow="Bluffton · Hilton Head · Savannah"
         title="Your Yard Should Look Like You Care. Not Like You've Given Up."
-        subtitle="Southern Straw delivers and installs premium pine straw and wheat straw across the Low Country — so you can stop staring at bare beds and start enjoying your yard again."
+        subtitle="Southern Straw delivers and installs premium pine straw and wheat straw across the Low Country. Stop staring at bare beds and start enjoying your yard again."
         primaryCta={{ label: "Get a Free Quote", href: "/contact" }}
-        secondaryCta={{ label: "See Our Work", href: "/gallery" }}
+        secondaryCta={{ label: "Revive Your Yard", href: "/contact" }}
+        image={{
+          src: "/images/gallery/40-symmetrical-walkway-porch.png",
+          alt: "A front walkway lined with fresh pine straw beds leading to a covered porch",
+        }}
       />
 
       <TrustBar />
@@ -32,7 +36,7 @@ export default function Home() {
               You&apos;ve put real time and money into your home. But every
               time you pull into the driveway, those patchy, faded beds
               remind you there&apos;s still something left undone. You know
-              what it needs — you just don&apos;t have the weekend to deal
+              what it needs. You just don&apos;t have the weekend to deal
               with it. That&apos;s exactly why Southern Straw exists.
             </p>
           </div>
@@ -60,7 +64,7 @@ export default function Home() {
             <ServiceCard
               icon={HardHat}
               title="Installation"
-              description="We handle everything. Our crew spreads, edges, and cleans up. You come home to a finished yard. No sweat — literally."
+              description="We handle everything. Our crew spreads, edges, and cleans up. You come home to a finished yard. No sweat, literally."
               href="/services"
             />
             <ServiceCard
@@ -86,7 +90,7 @@ export default function Home() {
                 number: "1",
                 title: "Tell us about your yard",
                 description:
-                  "Fill out our quick form — takes two minutes. Let us know your address, square footage, and what you're looking for.",
+                  "Fill out our quick form. It takes two minutes. Let us know your address, square footage, and what you're looking for.",
               },
               {
                 number: "2",
@@ -129,7 +133,7 @@ export default function Home() {
                 The Craft, In Progress
               </h2>
               <p className="mt-4 text-lg text-canopy-700">
-                We&apos;re building our photo gallery as we complete new projects.
+                A look at the clean beds, edges, and walkways we aim for on every job.
               </p>
             </div>
             <LinkButton href="/gallery" variant="outline">
@@ -137,11 +141,7 @@ export default function Home() {
             </LinkButton>
           </div>
           <div className="mt-10">
-            <GalleryGrid items={[
-              { label: "Fresh Pine Straw Install", tone: "straw" },
-              { label: "Bed Edging & Cleanup", tone: "canopy" },
-              { label: "Wheat Straw Delivery", tone: "bark" },
-            ]} />
+            <GalleryScroller />
           </div>
         </Container>
       </section>
@@ -149,7 +149,7 @@ export default function Home() {
       <CTASection
         heading="Your Yard Is One Step Away From Looking Like It Should"
         subheading="Get a free, no-pressure quote in minutes."
-        ctaLabel="Get a Free Quote"
+        ctaLabel="Revive Your Yard"
         ctaHref="/contact"
       />
     </>
