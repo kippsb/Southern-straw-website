@@ -1,9 +1,7 @@
 export const BUSINESS_NAME = "Southern Straw";
 
-// Placeholder until the site is deployed to a real, registered domain.
-// Update this the moment a production domain exists: it drives metadataBase,
-// canonical URLs, the sitemap, robots.txt, and JSON-LD.
-export const SITE_URL = "https://www.southernstraw.com";
+// Drives metadataBase, canonical URLs, the sitemap, robots.txt, and JSON-LD.
+export const SITE_URL = "https://www.strawsouthern.com";
 
 export const OG_IMAGE = {
   url: "/images/gallery/40-symmetrical-walkway-porch.png",
