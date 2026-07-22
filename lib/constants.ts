@@ -4,9 +4,9 @@ export const BUSINESS_NAME = "Southern Straw";
 export const SITE_URL = "https://www.strawsouthern.com";
 
 export const OG_IMAGE = {
-  url: "/images/gallery/40-symmetrical-walkway-porch.png",
-  width: 2400,
-  height: 1792,
+  url: "/images/og-image.jpg",
+  width: 1200,
+  height: 630,
   alt: "A front walkway lined with fresh pine straw beds leading to a covered porch",
 };
 
